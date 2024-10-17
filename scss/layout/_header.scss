@@ -1,0 +1,6 @@
+header{
+    @include flex3(row,space-around,center);
+    @include w-h(100vw,80px);
+    padding-top: 50px;
+            }
+        

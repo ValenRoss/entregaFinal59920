@@ -1,0 +1,21 @@
+
+.searchBar{
+    grid-column: 3 / 8;
+    grid-row: 7 / 8;
+    @include w-h(800px,60px);
+    background-color: yellow;
+    border-radius: 50px;
+        ul{
+            @include w-h(100%,100%);
+            @include flex4(row,center,center,20px);
+            div img{
+                @include w-h(28px,35px);
+            }
+            input{
+                background-color: rgb(0, 0, 0);  
+                color: yellow;       
+            }
+        }
+
+    
+}   

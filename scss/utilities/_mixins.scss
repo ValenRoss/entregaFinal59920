@@ -1,0 +1,83 @@
+@mixin flex4($direction,$justify,$align,$gap){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;   
+}
+
+@mixin flex3($direction,$justify,$align){
+display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin flex2($justify,$align){
+    display: flex;
+        justify-content: $justify;
+        align-items: $align;
+    }
+@mixin grid3($col,$row,$gap){
+    display: grid;
+    grid-template-columns: $col;
+    grid-template-rows: $row;
+    gap: $gap;
+}
+@mixin grid2($col,$row,$width,$height){
+    display: grid;
+    grid-template-columns: $col;
+    grid-template-rows: $row;
+    width: $width;
+    height: $height;
+}
+@mixin gridCall($col,$row){
+    grid-column: $col;
+    grid-row: $row;
+}
+
+@mixin button5($width,$height,$backc,$bCor,$bor){
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: $width;
+    height: $height;
+    background-color: $backc;
+    color: $bCor;
+    border-radius: $bor;
+}
+@mixin w-h($width,$height){
+    width: $width;
+    height: $height;
+}
+@mixin button6($width,$height,$backc,$backg,$border,$fonts,$fontw,$fontf){
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    width: $width;
+    height:$height;
+    background-color:$backc;
+    background-image:$backg;
+    border-radius:$border;
+    font-size:$fonts;
+    font-weight:$fontw; 
+    font-family:$fontf;
+}
+@mixin button6($buttom,$width,$height,$backc,$bCor,$bor){
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    bottom: $buttom;
+    width: $width;
+    height: $height;
+    background-color: $backc;
+    color: $bCor;
+    border-radius: $bor;
+}
+
+
+
+@mixin aText($color){
+    all:unset;
+    color:$color;
+}

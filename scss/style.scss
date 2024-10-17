@@ -1,0 +1,19 @@
+
+@import "./utilities/maps";
+@import "./utilities/mixins";
+
+@import "./base/reset";
+@import "./base/tipografias";
+
+@import "./layout/header";
+@import "./layout/mainIndex";
+@import "./layout/body";
+@import "./layout/footer";
+@import "./layout/tuCv";
+
+@import "./components/navBar";
+@import "./components/busqBar";
+@import "./components/card";
+
+@import "./layout/mediaQ/media768px";
+@import "./layout/mediaQ/media320px"

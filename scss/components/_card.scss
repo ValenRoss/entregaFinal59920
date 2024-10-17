@@ -1,0 +1,106 @@
+
+.card{
+    @include flex3(row,center,center);
+    @include w-h(400px,200px);
+    padding-top: 50px;
+    gap: 10px;
+    .box{
+        width: 100px;
+        height: 100px;
+        background-image: url(../assets/img/faceicon.jpg);
+        background-size: 150px;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 100%;
+    }
+    .icon{
+        @include flex3(column,center,center)
+    }
+
+    .icon spam{
+        width: 12px;
+    }
+    .count{
+        color: yellowgreen;
+    }
+    .icon img{
+        width: 30px;
+    }
+    .text{
+        @include flex3(row,center,center);
+        background-color: transparent;
+        width: 300px;
+        height: 100px;      
+        border-radius: 35px;    
+        border: 2px solid map-get($colorSitio , colorbox1);      
+        p{  
+            width: 70%;
+            font-size: medium;
+            font-weight: bold;
+            color: map-get($colorSitio , colorbox1);
+        }
+    }
+}
+
+.card2{
+    @extend .card;
+    .box{
+    background-image: url(../assets/img/faceicon2.jpg);
+    }
+    .text{
+        border: 2px solid map-get($colorSitio , colorbox2);
+        p{
+            color: map-get($colorSitio , colorbox2);
+        } 
+        }
+}
+.card3{
+    @extend .card2;
+    .box{
+        background-image: url(../assets/img/faceicon3.jpg);
+        }
+    .text{
+        border: 2px solid map-get($colorSitio , colorbox3);
+        p{
+            color: map-get($colorSitio , colorbox3);
+        } 
+    }
+}
+.company{
+    img{
+        padding-top: 20px;
+    }
+    
+}
+.cardComp 
+    { 
+    @include flex3(column,center,center);
+    border-color: 1px solid yellowgreen;
+    padding-top: 50px;
+    span{       
+        width: 300px;
+    }
+    .compList{  
+        padding-top: 20px;
+        ul{
+            @include flex3(row,center,center); 
+            @include w-h(350px,60px);
+            border: 2px solid yellowgreen;
+            border-radius: 30px;   
+            gap: 25px; 
+            list-style: none;
+            text-decoration: none;
+            .like{      
+                img{
+                width: 30px;
+                }
+            } 
+            li{
+                a{
+                @include aText(map-get($colorSitio, color2));             
+                }       
+            } 
+        
+        } 
+    }  
+}

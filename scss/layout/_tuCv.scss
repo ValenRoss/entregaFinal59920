@@ -1,0 +1,140 @@
+.cvGrid{
+    @include grid2(repeat(8,1fr),repeat(10,1fr),100vw,700px);
+    padding-top: 50px;
+    .cvImg{
+        grid-column: 3 / 4;
+        grid-row: 3 / 5;
+        order: 2;
+        img{
+            width: 400px;            
+        }
+    }
+    h2{
+        width: 400px;
+        font-weight: 30px;
+        color: yellowgreen;
+        grid-column: 4 / 8;
+        grid-row: 2 / 3;
+        order: 1;
+    }
+    article{
+        width: 350px;
+        font-size: 20px;
+        color: yellowgreen;
+        padding-left: 40px;
+        grid-column: 4 / 8;
+        grid-row: 4 / 5;
+        order: 1;
+    }
+    article2{
+        @extend article;
+        grid-row: 6 / 7;
+    }
+}
+
+    section{
+        @include flex3(column,center,center);   
+        .cvImg{
+            img{
+            width: 300px;
+            }   
+
+        }
+        .cvImg2{
+            img{
+                width: 300px; 
+                padding-top: 800px;
+            }
+      
+
+                               
+        }          
+        h3{ 
+            width: 250px;
+            color: map-get($colorSitio, colortext1);
+            padding-top: 40px;
+            padding-bottom: 40px;
+            font-size: 15px;
+        }
+        .loadImag{
+            @include flex3(column,center,center);
+            width: 100%;
+            button{
+                @include button5(110px,60px,yellow,black,40px);
+                margin: 20px;
+            input{
+                width: 80px;
+            }
+            }
+        }
+        
+        ul{
+            @include flex3(row,center,center);
+            width: 800px;
+            padding-top: 80px;
+       
+        }
+        form{
+            @include flex4(row,center,center,20px);
+            width: 100px;
+        }
+        label{
+            color: yellowgreen;
+        }
+        input{
+            background-color: map-get($colorSitio, colortext1);              
+        }
+        .otherLab{
+            @include flex4(column,center,center,10px);
+            padding-top: 30px;
+            input label placeholder{
+                width: 100%;
+                @include flex3(row,center,center);
+            }
+        }
+        .textSpace{
+            @include flex3(column,center,center);   
+            span{
+                padding-top: 20px;
+                width: 300px;
+                color: map-get($colorSitio, colortext1);
+            }        
+            input{
+                background-color: map-get($colorSitio, colortext1);
+                width: 300px;
+                height: 100px;
+            }
+        }
+    }
+    footer{
+        @include flex3(row,center,center);
+        padding-top: 1200px;
+        color: map-get($colorSitio, colortext1);
+        @include w-h(100vw,400px);
+        gap: 100px;
+        section2{
+                @include flex3(row,center,center);
+                width: 100%;
+                height: 100%;
+                gap: 20px;
+                span{
+                    p{
+                    width: 150px;
+                    height: 100px;
+                    }
+                }
+        .spanText{
+            width: 800px;
+            padding-top: 500px;
+        }
+        }
+
+        
+    }   
+
+
+
+    
+    
+    
+   

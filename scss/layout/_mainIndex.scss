@@ -1,0 +1,70 @@
+    main{
+        .gridMain{
+            @include grid2 (repeat(8,1fr),repeat(8,1fr),100vw,700px);
+            background-image: url(../assets/img/background.png);
+            background-repeat: no-repeat;
+            background-size: 95vw;
+            background-position-x: center;
+            background-position-y: 100px;
+            .searchBar{
+                @include flex3(row,center,center);
+            }
+        }
+    
+            section{
+                @include flex3(column,center,center);
+                @include w-h(100vw,100px);
+                padding-top: 30px;
+                h1{
+                    width: 70%;
+                    @include flex3(grow,center,center);
+                    color: rgb(185, 243, 49);
+                }
+                article{    
+                    padding-top: 20px;
+                    @include w-h(50%,80px);
+                    color: aliceblue;
+                }
+            }
+            section2{
+                @include flex3(column,center,center);
+               
+            }
+            section3{              
+                @include grid2(repeat(8,1fr),repeat(8,1fr),100vw,700px);             
+                .textCand{
+                    padding-top: 500px;
+                    grid-column: 4 / 7;
+                    grid-row: 1 / 2;
+                    font-size: larger;
+                    font-weight: bold;
+                    color: map-get($colorSitio,color2)
+                        
+                    }
+                .card{
+                    grid-column: 3 / 5;
+                    grid-row: 3 / 4;
+                }
+                .card2{
+                    @extend .card;
+                    grid-column: 5 / 7;
+                    grid-row: 5 / 6;
+                }
+                .card3{
+                    @extend .card;
+                    grid-column: 3 / 7;
+                    grid-row: 7 / 8;
+                }
+            }
+                     
+    }      
+
+                
+
+                
+                
+        
+          
+
+    
+    
