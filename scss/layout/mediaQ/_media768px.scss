@@ -1,3 +1,72 @@
 @media(max-width:768px){
-    
+.navBar{  
+    @include flex3(row,center,center);
+    width: 768px;
+        ul{
+            width: 768px;
+            @include flex4(row,center,center,10px);
+            padding-right: 100px;
+            
+        button{
+            width: 80px;
+        }
+        label{
+            padding-left: 10px;
+            width: 50px;
+        }
+        input{
+            width: 100px;
+
+        }
+        }   
+    }
+    .gridMain{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,1fr);
+        height: 400px;
+        padding-top: 100px;
+        .searchBar{
+            grid-column: 3 / 6;
+            grid-row: 4 / 5;
+            @include w-h(600px,50px);
+            input{
+                width: 120px;
+            }
+            ul{
+                div img{
+                    width: 18px;
+                    height: 25px;
+                }
+            }
+            
+        }
+    }
+    footer{
+        @include w-h(768px,100px);
+        section2{
+            .redPart{                  
+                .redes{
+                    width: 100vw;
+                    height: 300px;               
+                ul{
+                    li{
+                        width: 150px;
+                        font-size: 12px;
+                    }                   
+                }               
+                }
+                }
+        }   
+            .footText{
+                width: 500px;
+                p{
+                    font-size: 10   px;
+                }
+                
+            }
+    }
 }
+
+
+
+    

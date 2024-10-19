@@ -1,3 +1,31 @@
 @media(max-width:320px){
+    .navBar{
+        height: 50px;
+    }
+    .gridMain{
+        @include flex3(row,center,center);
+        width: 100vw;
+        background-position: center;
+        background-size: 100vw;
+        background-position-x: 100px;
+        .searchBar{
+            width: 320px;
+        }
+    }
     
+    .redes{
+        width: 300px;
+
+    }
+}
+footer{
+    section2{
+        width: 100%;
+        .redPart{
+            width: 100%;
+            .redes{
+                width: 100%;
+            }
+        }      
+    }        
 }

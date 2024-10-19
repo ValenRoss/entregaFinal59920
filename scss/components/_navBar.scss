@@ -1,16 +1,18 @@
 .navBar{
     @include flex2(row,center);
     background-color: map-get($colorSitio ,color3);
-    @include w-h(100vw,70px);
+    @include w-h(100vw,50px);
         ul{
             @include w-h(100%,100%);
             @include flex4(row,center,center,50px);
             a{
-                text-decoration: none;
-                color: black;
+                text-decoration: none;              
+                color: black;           
             }
         button{
-            @include button5(120px,50px,yellow,black,40px)
+            @include button5(120px,40px,yellow,black,40px);
+            font-family: map-get($fuentesStio, fuente3);
+            font-size: 12px;
            
         }
         input{
@@ -22,7 +24,7 @@
             color: rgb(242, 242, 228);
             padding-left: 100px;
             font-size:map-get($fuentesStio , md);
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-family: map-get($fuentesStio, fuente3);
         }
        
         }

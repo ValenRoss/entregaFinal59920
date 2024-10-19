@@ -1,0 +1,63 @@
+footer{       
+    @include flex3(column,center,center);
+    @include w-h(100vw,200px);
+    color: map-get($colorSitio, colortext1);
+    padding-top: 300px;
+    section2{
+            @include flex3(row,center,center);
+            gap: 50px;
+            .line{
+                width: 500px;
+                height: 1px;
+                gap: 20px;
+                background-color: yellow;
+            }
+            .redPart{
+                @include flex3(column,center,center);             
+                gap: 100px;
+                padding-top: 20px;
+                .redes{
+                    @include flex3(column,center,center);                    
+                    background-color: rgb(74, 72, 69);
+                    width: 100vw;    
+                    height: 250px;
+                    gap: 20px;
+                ul{
+                    @include flex3(row,center,center);
+                    span{
+                        width: 200px;
+                    }
+                }
+            }
+            }
+            ul{
+                @include flex3(row,center,center);
+                gap: 10px;
+                img{
+                    width: 30px;
+                }
+                li{
+                    width: 200px;
+                    list-style: none;
+                }
+            }
+            span{
+                @include flex3(row,center,center);
+                width: 100%;
+                p{
+                    padding-top: 10px;
+                    width: 400px;
+                }   
+            }
+    }
+.footText{
+    // width: 75vw;
+    p{
+    width: 800px;
+    font-family: map-get($fuentesStio,fuente1);
+    font-size: 12px;
+
+    }
+}
+
+} 
